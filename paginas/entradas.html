@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon-->
+  <link rel="icon" href="../IMAGENES/Capa 67.png" type="image/x-icon">
+
+  <!--CSS-->
+  <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
+  <title>Kincho Sur F.C.</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <nav id="barra-navegacion">
+    <ul> 
+      <div class="container">
+        <div class="logo">
+          <img src="../IMAGENES/Capa 67.png" alt="Logo" />
+        </div>
+        <div class="menu-container">
+          
+          <div class="menu-item">
+            <li> <a href="../index.html">INICIO</a></li>
+          </div>
+          <div class="menu-item">
+            <li><a href="../paginas/elclub.html">EL CLUB</a></li>
+          </div>
+          <div class="menu-item">
+            <li><a href="./noticias.html">NOTICIAS</a></li>
+          </div>
+          <div class="menu-item">
+            <li><a href="./entradas.html">ENTRADAS</a></li>
+          </div>
+          <div class="menu-item">
+            <li><a href="./tienda.html">TIENDA</a></li>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <form action="procesar.php" method="post">
+          
+          <h1>INFORMACIÓN DE LOS ESPECTADORES</h1>
+          <h3>Es necesario crear un usuario para ver las disponibilidad de las tribunas,en caso de tener un usuario iniciar sesión</h3>
+          <!--Radio-->
+          
+          <div>
+            <!--Input email-->
+            <label for="usuario">Usuario:</label>
+            <input type="usuario" name="usuario" placeholder="kinchosur2023">
+          </div>
+          
+          <div>
+            <!--Input email-->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" placeholder="kinchosur2023@gmail.com">
+          </div>
+          
+          <div>
+            <!--Input pass-->
+          <label for="pass">Contraseña:</label>
+          <input type="password" name="pass" required>
+        </div>
+        
+        <button type="submit">Crear usuario</button>
+        
+        <button type="submit">Iniciar sesion</button>
+        
+        <h3>Complete la información de sus entradas </h3>
+        <h3>TIPO DE DOCUMENTO</h3>
+        
+        <label for="documento">CÉDULA DE IDENTIDAD</label>
+        <input type="radio" name="documento" value="cedula">
+        
+        <label for="documento">PASAPORTE</label>
+        <input type="radio" name="documento" value="pasaporte">
+        
+        
+        <!--Input Nombre-->
+        <div>
+          <label for="documento">Documento</label>
+          <input type="text" name="documento" placeholder="Ej. 12345678">
+        </div>
+        
+        <div>
+          <!--Input Apellido-->
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre">
+        </div>
+        
+        <div>
+          <!--Input Apellido-->
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido">
+        </div>
+        
+        
+        
+        <!--Checkbox-->
+        <h3>Seleccione las tribunas de preferencia</h3>
+        <label for="tribuna">Rodrigo Piris</label>
+        <input type="checkbox" name="tribuna" value="rafael-piris">
+        
+        <label for="tribuna">Alejandro Abella</label>
+          <input type="checkbox" name="tribuna" value="alejandro-abella">
+          
+          <label for="tribuna">Coco Hoffman</label>
+          <input type="checkbox" name="tribuna" value="coco-hoffman">
+          
+          <label for="tribuna">Matias Albistur</label>
+          <input type="checkbox" name="tribuna" value="matias-albistur">
+          
+          <button type="submit">Ver disponibilidad</button>
+          
+          <!--despliega opciones,con CTRL+KC-->
+          <!-- <select name="tribunas">
+            <option value="L">large</option>
+            <option value="j">jorge</option>
+          </select> -->
+          
+
+          <!--Textaarea-->
+          <form>
+            <h3>Dejame tu mensaje</h3>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+            
+          <input type="submit" value="Enviar Formulario"/>
+          <input type="submit" value="Borrar Formulario"/>
+        </form>
+      </main>
+  </body>
