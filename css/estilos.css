@@ -247,6 +247,9 @@
   display: grid;
   grid-template-columns: 200px 200px 200px;
   column-gap: 200px;
+
+  grid-template-areas: 
+  "header header header";
 }
 
 .img-fluid{
@@ -360,4 +363,17 @@ article a:hover {
   outline: none;
   border: none;
   background-color:  transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .rectanguloq {
+    width: 415px;
+    height: 10px;
+    order: 2;
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 50px;
+    
+  }
+  
 }

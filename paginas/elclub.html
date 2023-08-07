@@ -6,52 +6,62 @@
   <!--Favicon-->
   <link rel="icon" href="../IMAGENES/Capa 67.png" type="image/x-icon">
 
-  <!--CSS-->
-  <link rel="stylesheet" href="../css/estilos.css">
+
   <title>Kincho Sur F.C.</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+        <!-- Nuestro CSS -->
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav id="barra-navegacion">
-    <ul> 
-      <div class="container">
-        <div class="logo">
-          <img src="../IMAGENES/Capa 67.png" alt="Logo" />
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="logo">
+        <img src="../IMAGENES/Capa 67.png" alt="Logo"/>
+    </div>
+    <div>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active mt-md-0 mt-3" href="../index.html">INICIO</a>
+            <a class="nav-item nav-link active mt-md-0 mt-3" href="#">EL CLUB</a>
+            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/noticias.html">NOTICIAS</a>
+            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/entradas.html">ENTRADAS</a>
+            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/tienda.html">TIENDA</a>
+
         </div>
-        <div class="menu-container">
-          
-          <div class="menu-item">
-            <li> <a href="../index.html">INICIO</a></li>
-        </div>
-          <div class="menu-item">
-            <li><a href="../paginas/elclub.html">EL CLUB</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./noticias.html">NOTICIAS</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./entradas.html">ENTRADAS</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./tienda.html">TIENDA</a></li>
-          </div>
-        </div>
-  </nav>
+    </div>
+    </div> 
+</nav>
   <body>
     <main>
 
-      <div class="flex-container">
-        <!--Flex Items-->
-        <div class="elclub">
-            <img class="fotorafa" src="../IMAGENES/Captura de pantalla 2023-07-11 190831.png" alt="Noticias">
+      <div class="row">
+        <h1 class="col-12 text-center mt-4 text-uppercase">HISTORIA DEL CLUB</h1>
+
+        <div class="col-md-4 text-left">
+            <figure>
+              <img class="fotorafa" src="../IMAGENES/Captura de pantalla 2023-07-11 190831.png" alt="Rafa">
+            </figure>
         </div>
       
-        <div class="historia">
+        <div class="historia col-md-4 text-left">
           <h1>CLUB KINCHO SUR</h1>
           <p>El 14 de mayo de 2015, se reunieron en la casa de Ernesto Caprario, 22 jóvenes de entre 13 y 20 años, para fundar el Kincho Sur, primer Club de barrio Sur y decano del fútbol 7. En la sesión fundacional se establecieron las bases del Club, el nombre de la Institución y la indumentaria. Además, fueron electos Sebastián Puppo como Presidente y Domingo Prat como Capitán</p>
         </div>
           
-          <div class="rectanguloq">
+          <div class="rectanguloq col-md-4 text-left">
         </div>
       </div>
+
     </main>
       </body>
