@@ -34,7 +34,7 @@
   
   
   body {
-    background-color: #2E364A;
+    background-color: #1d222e;
     font-family: "MiFuenteLocal";
     color: #FFF;
   }
@@ -56,7 +56,7 @@
   }
 
   .menu-item {
-    background-color: #2E364A;
+    background-color: #1d222e;
     color: #FFF;
     border-radius: 10px;
     padding: 10px;
@@ -97,21 +97,21 @@
 }
 
 .fotonico {
-  width: 300px; /* Ancho deseado de la imagen */
+  width: 300px; 
   height: 180;
 }
  
 .fotococo {
-  width: 300px; /* Ancho deseado de la imagen */
+  width: 300px; 
   height: 180px;
 }
 
 .fotomateo {
-  width: 300px; /* Ancho deseado de la imagen */
+  width: 300px; 
   height: auto;
 }
 .fotomia {
-  width: 1000px; /* Ancho deseado de la imagen */
+  width: 1000px; 
   height: auto;
   margin: 20px;
 }
@@ -178,7 +178,7 @@
   height: 500px;
   order: 4;
   text-align: center;
-  color: #2E364A;
+  color: #1d222e;
   background-color: #FFF;
   margin-top: 10px;
 }
@@ -201,7 +201,7 @@
   width: 450px;
   height: 260px;
   order: 1;
-  color: #2E364A;
+  color: #1d222e;
   background-color: #00ff62;
   margin-top: 10px;
 }
@@ -241,7 +241,7 @@
 .grid-container{
   width: 90%;
   max-width: 1000px;
-  border: 10px solid #00ff62;
+  border: 10px solid #ffffff;
   margin: auto;
   text-align: center;
   display: grid;
@@ -320,14 +320,14 @@ article a:hover {
 
 .navbar {
   font-weight: 600;
-  width: 1203px;
+  width: 1440px;
   height: 101px;
   border-radius: 0px;
   padding: 0PX;
   margin-top: 50px;
   display: flex;
   justify-content: flex-start;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: 200px;
   display: flex;
   align-items: center;
@@ -335,7 +335,7 @@ article a:hover {
 }
 
 .nav-link {
-    background-color: #2E364A;
+    background-color:#1d222e;
     color: #FFF;
     border-radius: 10px;
     padding: 10px; 
