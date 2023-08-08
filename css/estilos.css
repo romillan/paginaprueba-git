@@ -38,10 +38,39 @@
     font-family: "MiFuenteLocal";
     color: #FFF;
   }
-  
 
+  .main-content {
+    flex: 1;
+  }
   
+  .redes-items {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    padding: 0;
+    font-size: 30px; 
+  }
   
+  .redes-item {
+    margin: 0 55px;
+  }
+  
+  .redes-items li:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  .redes-container {
+    background-color: #D9D9D9;
+    width: 1203px;
+    height: 101px;
+    border-radius: 0px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #1d222e;
+  }
 
   .menu-container {
     background-color: #D9D9D9;
@@ -219,6 +248,7 @@
   order: 3;
   font-size: 20px;
   text-align: left;
+  
 }
 
 .rectanguloq{
@@ -365,7 +395,7 @@ article a:hover {
   background-color:  transparent;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
   .rectanguloq {
     width: 415px;
     height: 10px;
@@ -376,4 +406,37 @@ article a:hover {
     
   }
   
+}
+@media (max-width: 480px) {
+  /* Estilos para el footer en móvil */
+  footer {
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    text-align: center; /* Centrar el contenido */
+    padding: 10px; /* Espaciado interno */
+    position: fixed; /* Posición fija en la parte inferior */
+    bottom: 0; /* Alinear abajo */
+    width: 100%; /* Ancho completo */
+  }
+
+  /* Estilos para el contenido dentro del footer */
+  .redes-container {
+    width: 100%; /* Ancho completo */
+    background-color: #D9D9D9; 
+    text-align: center; 
+  }
+
+  .redes-items {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+    position: fixed;
+    width: 100%; /
+    bottom: 0; 
+  }
+.fotorafa{
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
 }
