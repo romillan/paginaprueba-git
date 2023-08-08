@@ -410,17 +410,16 @@ article a:hover {
 @media (max-width: 480px) {
   /* Estilos para el footer en móvil */
   footer {
-    background-color: #f0f0f0; /* Color de fondo opcional */
-    text-align: center; /* Centrar el contenido */
-    padding: 10px; /* Espaciado interno */
-    position: fixed; /* Posición fija en la parte inferior */
-    bottom: 0; /* Alinear abajo */
-    width: 100%; /* Ancho completo */
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
   }
 
   /* Estilos para el contenido dentro del footer */
   .redes-container {
-    width: 100%; /* Ancho completo */
+    width: 100%; 
     background-color: #D9D9D9; 
     text-align: center; 
   }
