@@ -1,142 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Favicon-->
-  <link rel="icon" href="../IMAGENES/Capa 67.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Favicon-->
+        <link rel="icon" href="../IMAGENES/Capa 67.png" type="image/x-icon">
 
-  <!--CSS-->
-  <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
-  <title>Kincho Sur F.C.</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-  </head>
-  <body>
-    <nav id="barra-navegacion">
-    <ul> 
-      <div class="container">
-        <div class="logo">
-          <img src="../IMAGENES/Capa 67.png" alt="Logo" />
-        </div>
-        <div class="menu-container">
-          
-          <div class="menu-item">
-            <li> <a href="../index.html">INICIO</a></li>
+
+        <title>Kincho Sur F.C.</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+        <!-- Nuestro CSS -->
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+        <!--Bootstrap Iconos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <a class="navbar-brand logo" href="#">
+                <img src="../IMAGENES/Capa 67.png" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="/index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/paginas/elclub.html">EL CLUB</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">ENTRADAS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./tienda.html">TIENDA</a>
+                        </li>
+                    </ul> 
+                </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--------------------------------------------------------------------------------------------------------->
+        <main>
+          <div class="container">
+            <!-- Información de los Espectadores -->
+            <div class="row">
+              <div class="col-md-6 spectator-info">
+                <h3 class="mt-12 text-uppercase text-left">INFORMACIÓN DE LOS ESPECTADORES</h3>
+                <form action="procesar.php" method="post">
+                  <!-- Campos de información de los espectadores -->
+                  <div class="mb-3">
+                    <label for="nombre">Correo electronico:</label>
+                    <input type="text" name="documento" placeholder="kinchosur2023">
+                  </div>
+                  <div class="mb-3">
+                    <label for="nombre">Contraseña:</label>
+                    <input type="password" name="pass" required>
+                  </div>
+
+              
+                  <button type="submit" class="btn btn-primary my-2">Crear usuario</button>
+                  <button type="submit" class="btn btn-primary my-2">Iniciar sesión</button
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <form action="procesar.php" method="post">
+                  <h3 class="text-left">TIPO DE DOCUMENTO</h3>
+                  <!-- Campos de tipo de documento -->
+                  <div class="text-left">
+                    <label for="documento" class="mb-3 mt-4">CÉDULA DE IDENTIDAD</label>
+                    <input type="radio" name="documento" value="cedula">
+                    
+                    <label for="documento" class="mb-3">PASAPORTE</label>
+                    <input type="radio" name="documento" value="pasaporte">
+                  </div>
+                  
+                  <!--Input Nombre-->
+                  <div class="mb-3">
+                    <label for="nombre">Documento:</label>
+                    <input type="text" name="documento">
+                  </div>
+
+                  <!--Input Nombre-->
+                  <div class="mb-3">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                  </div>
+                  
+                  <!--Input Apellido-->
+                  <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido">
+                  </div>
+                  
+                  <!--Checkbox-->
+                  <h3 class="mt-12 text-uppercase text-left">Seleccione las tribunas de preferencia</h3>
+                  <label for="tribuna">Rodrigo Piris</label>
+                  <input type="checkbox" name="tribuna" value="rafael-piris">
+                  
+                  <label for="tribuna">Alejandro Abella</label>
+                  <input type="checkbox" name="tribuna" value="alejandro-abella">
+                  
+                  <label for="tribuna">Coco Hoffman</label>
+                  <input type="checkbox" name="tribuna" value="coco-hoffman">
+                  
+                  <label for="tribuna">Matias Albistur</label>
+                  <input type="checkbox" name="tribuna" value="matias-albistur">
+                  
+                  <button type="submit" class="btn btn-primary my-2">Ver disponibilidad</button
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="menu-item">
-            <li><a href="../paginas/elclub.html">EL CLUB</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./noticias.html">NOTICIAS</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./entradas.html">ENTRADAS</a></li>
-          </div>
-          <div class="menu-item">
-            <li><a href="./tienda.html">TIENDA</a></li>
-          </div>
-        </div>
-      </nav>
-      <main>
+
+        <!-- Resto de tu formulario -->
         <form action="procesar.php" method="post">
-          
-          <h1>INFORMACIÓN DE LOS ESPECTADORES</h1>
-          <h3>Es necesario crear un usuario para ver las disponibilidad de las tribunas,en caso de tener un usuario iniciar sesión</h3>
-          <!--Radio-->
-          
-          <div>
-            <!--Input email-->
-            <label for="usuario">Usuario:</label>
-            <input type="usuario" name="usuario" placeholder="kinchosur2023">
-          </div>
-          
-          <div>
-            <!--Input email-->
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" name="email" placeholder="kinchosur2023@gmail.com">
-          </div>
-          
-          <div>
-            <!--Input pass-->
-          <label for="pass">Contraseña:</label>
-          <input type="password" name="pass" required>
-        </div>
-        
-        <button type="submit">Crear usuario</button>
-        
-        <button type="submit">Iniciar sesion</button>
-        
-        <h3>Complete la información de sus entradas </h3>
-        <h3>TIPO DE DOCUMENTO</h3>
-        
-        <label for="documento">CÉDULA DE IDENTIDAD</label>
-        <input type="radio" name="documento" value="cedula">
-        
-        <label for="documento">PASAPORTE</label>
-        <input type="radio" name="documento" value="pasaporte">
-        
-        
-        <!--Input Nombre-->
-        <div>
-          <label for="documento">Documento</label>
-          <input type="text" name="documento" placeholder="Ej. 12345678">
-        </div>
-        
-        <div>
-          <!--Input Apellido-->
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre">
-        </div>
-        
-        <div>
-          <!--Input Apellido-->
-          <label for="apellido">Apellido:</label>
-          <input type="text" name="apellido">
-        </div>
-        
-        
-        
-        <!--Checkbox-->
-        <h3>Seleccione las tribunas de preferencia</h3>
-        <label for="tribuna">Rodrigo Piris</label>
-        <input type="checkbox" name="tribuna" value="rafael-piris">
-        
-        <label for="tribuna">Alejandro Abella</label>
-          <input type="checkbox" name="tribuna" value="alejandro-abella">
-          
-          <label for="tribuna">Coco Hoffman</label>
-          <input type="checkbox" name="tribuna" value="coco-hoffman">
-          
-          <label for="tribuna">Matias Albistur</label>
-          <input type="checkbox" name="tribuna" value="matias-albistur">
-          
-          <button type="submit">Ver disponibilidad</button>
-          
-          <!--despliega opciones,con CTRL+KC-->
-          <!-- <select name="tribunas">
-            <option value="L">large</option>
-            <option value="j">jorge</option>
-          </select> -->
-          
-
-          <!--Textaarea-->
-          <form>
-            <h3>Dejame tu mensaje</h3>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-            
-          <input type="submit" value="Enviar Formulario"/>
-          <input type="submit" value="Borrar Formulario"/>
+          <!-- ... -->
         </form>
+        <form>
+          <!-- ... -->
+        </form>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+              <form class="custom-form">
+                <h5 class="mt-12 text-uppercase text-left">En caso de no poder ingresar su usuario por favor dejar un mensaje que resolveremos su problema</h5>
+                <div class="mb-3">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea class="form-control" name="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                
+                <div class="text-center">
+                  <input type="submit" class="btn btn-primary my-2" value="Enviar Formulario">
+                  <input type="submit" class="btn btn-secondary my-2" value="Borrar Formulario">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </main>
-      <footer class:"footer">
-        <div class="redes-container">
-          <div class="main-content">
-            <ul class="redes-items">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
+
+      <!--------------------------------------------------------------------------------------------------------->
+      
+      
+      <!--FOOTER-->
+      <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+            <div class="row mt-3">
+          <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class=" footer-text text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Kincho Sur
+            </h6>
+            <p class="footer-text">
+              Un grupo de amigos que solamente se se juntan a divertirse mediante un balón de fútbol
+            </p>
+            </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class=" footer-text text-uppercase fw-bold mb-4">
+                  Redes Sociales
+              </h6>
+              <p>
+              <a href="#!" class="footer-text">Instagram</a>
+              </p>
+              <p>
+              <a href="#!" class="footer-text">Facebook</a>
+              </p>
+              <p>
+              <a href="#!" class="footer-text">Twitter</a>
+              </p>
+              <p>
+              <a href="#!" class="footer-text">Youtube</a>
+              </p>
+              </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="footer-text text-uppercase fw-bold mb-4">
+                Quizas te interese...
+                </h6>
+                <p>
+                <a href="/paginas/elclub.html" class="footer-text">El club</a>
+                </p>
+                <p>
+                <a href="/paginas/noticias.html" class="footer-text">Noticiass</a>
+                <p>
+                <a href="/paginas/tienda.html" class="footer-text">Tienda</a>
+                </p>
+              </div>
+            </div>
           </div>
-          </div>
-        </footer>
-  </body>
+        </section>
+    </footer>
+</body> 

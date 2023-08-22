@@ -1,121 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Favicon-->
-  <link rel="icon" href="./IMAGENES/Capa 67.png" type="image/x-icon">
-
-  <!--CSS-->
-  <link rel="stylesheet" href="./css/estilos.css">
-  <title>Kincho Sur F.C.</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" href="../IMAGENES/Capa 67.png" type="image/x-icon">
+  
+  
+    <title>Kincho Sur F.C.</title>
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      
+          <!-- Nuestro CSS -->
+          <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+      
+          <!-- Bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+  
+          <!--Bootstrap Iconos-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  </head>
 
 <body>
   <main>
 
     <!--Menu-->
     <header>
-      <nav>
-          <div class="container">
-            <div class="logo">
-              <img src="./IMAGENES/Capa 67.png" alt="Logo"/>
-            </div>
-            <div class="menu-container">
-              
-              <div class="menu-item">
-                <li> <a href="index.html">INICIO</a></li>
-              </div>
-              <div class="menu-item">
-                <li><a href="./paginas/elclub.html">EL CLUB</a></li>
-              </div>
-              <div class="menu-item">
-                <li><a href="./paginas/noticias.html">NOTICIAS</a></li>
-              </div>
-              <div class="menu-item">
-                <li><a href="./paginas/entradas.html">ENTRADAS</a></li>
-              </div>
-              <div class="menu-item">
-                <li><a href="./paginas/tienda.html">TIENDA</a></li>
-              </div>
-            </div>
-          </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <img src="./IMAGENES/Capa 67.png" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/elclub.html">EL CLUB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/entradas.html">ENTRADAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/tienda.html">TIENDA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  
-  
+  <main>
   <!--Imagenes-->
-  <article>
-    <img class="fotomia" src="./IMAGENES/1656546370-INE_7286.jpg" alt="Rodrigo"/>
-  </article>
+    <div class="text-center">
+    <img class="img-fluid" src="./IMAGENES/1656546370-INE_7286.jpg" alt="Rodrigo" />
+    </div>
 
 <!--NOTICIAS-->
-<h1>ÚLTIMAS NOTICIAS</h1>
+    <h1 class="text-left">ÚLTIMAS NOTICIAS</h1>
 
+    <div class="container">
+      <div class="row justify-content-center">
+    <!--Flex Items-->
+      <div class="caja c1">
+        <a href="https://www.ligasiete.com.uy/articulo/643/sur-city-1-kincho-sur-1">
+        <img class="fotomateo1" src="./IMAGENES/mateo.jpg" alt="Noticias"></a>
+        <a href="https://www.ligasiete.com.uy/articulo/643/sur-city-1-kincho-sur-1">Otra valla invicta bajos los 3</a>
+      </div>
 
+      <div class="caja c2">
+        <a href="https://www.ligasiete.com.uy/articulo/588/kincho-sur-4-del-molino-1-">
+        <img class="fotococo1" src="./IMAGENES/5n.jpg" alt="Noticias"></a>
+        <a href="https://www.ligasiete.com.uy/articulo/588/kincho-sur-4-del-molino-1-">Goleador en racha</a>
+      </div>
 
-
-<div class="flex-container">
-  <!--Flex Items-->
-  <div class="caja c1">
-    <a href="https://www.ligasiete.com.uy/articulo/643/sur-city-1-kincho-sur-1">
-      <img class="fotomateo1" src="./IMAGENES/mateo.jpg" alt="Noticias"></a>
-      <a href="https://www.ligasiete.com.uy/articulo/643/sur-city-1-kincho-sur-1">Otra valla invicta bajos los 3</a>
-  </div>
-
-  <div class="caja c2">
-    <a href="https://www.ligasiete.com.uy/articulo/588/kincho-sur-4-del-molino-1-">
-      <img class="fotococo1" src="./IMAGENES/5n.jpg" alt="Noticias"></a>
-      <a href="https://www.ligasiete.com.uy/articulo/588/kincho-sur-4-del-molino-1-">Goleador en racha</a>
-  </div>
-
-  <div class="caja c3">
-    <a href="https://www.ligasiete.com.uy/articulo/422/kincho-sur-5-2-loco-perro">
-      <img class="fotonico1" src="./IMAGENES/nico5.jpg" alt="Noticias1"></a>
-      <a href="https://www.ligasiete.com.uy/articulo/422/kincho-sur-5-2-loco-perro">El Kincho gana y golea</a>
+      <div class="caja c3">
+        <a href="https://www.ligasiete.com.uy/articulo/422/kincho-sur-5-2-loco-perro">
+        <img class="fotonico1" src="./IMAGENES/nico5.jpg" alt="Noticias1"></a>
+        <a href="https://www.ligasiete.com.uy/articulo/422/kincho-sur-5-2-loco-perro">El Kincho gana y golea</a>
+      </div>
     </div>
+
 
     <!--tabla de posiciones-->
-  <div class="caja c4"><h3>TABLA DE POSICIONES</h3>
-  <ol>
-    <li>Kincho Sur- 17 pts</li>
-    <li>Nacional- 17 pts</li>
-    <li>Penarol- 17 pts</li>
-    <li>Defensor- 17 pts</li>
-    <li>Danubio- 17 pts</li>
-    <li>Lobos- 17 pts</li>
-    <li>Arienzo- 12 pts</li>
-    <li>Flbo- 10 pts</li>
-    <li>Arbolito- 9 pts</li>
-    <li>Lgante- 9 pts</li>
-    <li>UTT- 8 pts</li>
-    <li>Champagne- 5 pts</li>
-    <li>Mono- 2 pts</li>
-    <li>Molino- 1 pts</li>
-  </ol>
-</div>
-</div>
+    
+    <div class="caja c7"><h3>TABLA DE POSICIONES</h3>
+      <ol>
+        <li>Kincho Sur- 17 pts</li>
+        <li>Nacional- 17 pts</li>
+        <li>Penarol- 17 pts</li>
+        <li>Defensor- 17 pts</li>
+        <li>Danubio- 17 pts</li>
+        <li>Lobos- 17 pts</li>
+        <li>Arienzo- 12 pts</li>
+        <li>Flbo- 10 pts</li>
+        <li>Arbolito- 9 pts</li>
+        <li>Lgante- 9 pts</li>
+        <li>UTT- 8 pts</li>
+        <li>Champagne- 5 pts</li>
+        <li>Mono- 2 pts</li>
+        <li>Molino- 1 pts</li>
+      </ol>
+    </div>
+    </div>
+    
 <!--video del partido-->
-<section>
-      <!--Iframe-->
-      <section id="video">
-        <h1>PARTIDO COMPLETO</h1>
-        <iframe width="775" height="450" src="https://www.youtube.com/embed/j9ZiXrCLVss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
-        </iframe>
-      </section>
+    <section class="text-center">
+      <h1>PARTIDO COMPLETO</h1>
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/j9ZiXrCLVss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
- 
   </main>
-  <footer class:"footer">
-  <div class="redes-container">
-    <div class="main-content">
-      <ul class="redes-items">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
-    </div>
-    </div>
-  </footer>
-  </body>
+
+<!--FOOTER-->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <section class="">
+      <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+      <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class=" footer-text text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3"></i>Kincho Sur
+          </h6>
+          <p class="footer-text">
+          Un grupo de amigos que solamente se se juntan a divertirse mediante un balón de fútbol
+          </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class=" footer-text text-uppercase fw-bold mb-4">
+          Redes Sociales
+          </h6>
+          <p>
+          <a href="#!" class="footer-text">Instagram</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Facebook</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Twitter</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Youtube</a>
+          </p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="footer-text text-uppercase fw-bold mb-4">
+          Quizas te interese...
+          </h6>
+          <p>
+          <a href="/paginas/elclub.html" class="footer-text">El club</a>
+          </p>
+          <p>
+            <a href="/paginas/noticias.html" class="footer-text">Noticias</a>
+            </p>
+          <p>
+          <a href="/paginas/entradas.html" class="footer-text">Entradas</a>
+          <p>
+          <a href="/paginas/tienda.html" class="footer-text">Tienda</a>
+          </p>
+      </div>
+      </div>
+      </div>
+  </section>
+</footer>
+</body>

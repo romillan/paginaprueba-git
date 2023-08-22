@@ -19,60 +19,135 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+
+        <!--Bootstrap Iconos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <div class="logo">
-        <img src="../IMAGENES/Capa 67.png" alt="Logo"/>
-    </div>
-    <div>    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active mt-md-0 mt-3" href="../index.html">INICIO</a>
-            <a class="nav-item nav-link active mt-md-0 mt-3" href="#">EL CLUB</a>
-            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/noticias.html">NOTICIAS</a>
-            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/entradas.html">ENTRADAS</a>
-            <a class="nav-item nav-link active mt-md-0 mt-3" href="../paginas/tienda.html">TIENDA</a>
-
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <img src="../IMAGENES/Capa 67.png" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EL CLUB</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./noticias.html">NOTICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./entradas.html">ENTRADAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tienda.html">TIENDA</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    </div> 
-</nav>
-  <body>
+      </div>
+    </nav>
+  </header>
     <main>
 
       <div class="row">
-        <h1 class="col-12 text-center mt-4 text-uppercase">HISTORIA DEL CLUB</h1>
+        <div class="col-12 text-center">
+          <h1 class="mt-4 text-uppercase">HISTORIA DEL CLUB</h1>
+        </div>
+      </div>
 
-        <div class="col-md-4 text-left">
-            <figure>
-              <img class="fotorafa" src="../IMAGENES/Captura de pantalla 2023-07-11 190831.png" alt="Rafa">
+      <div class="row justify-content-md-between">
+        <div class="col-md-5 order-md-first text-center">
+          <figure class="mb-4 mb-md-5">
+            <img class="fotorafa" src="../IMAGENES/Captura de pantalla 2023-07-11 190831.png" alt="Rafa">
+          </figure>
+        </div>
+        
+        <div class="col-md-6 mt-md-6 order-md-last">
+          <div class="text-center">
+            <h1>CLUB KINCHO SUR</h1>
+            <p class="mb-0">El 14 de mayo de 2015, se reunieron en la casa de Ernesto Caprario, 22 jóvenes de entre 13 y 20 años, para fundar el Kincho Sur, primer Club de barrio Sur y decano del fútbol 7. En la sesión fundacional se establecieron las bases del Club, el nombre de la Institución y la indumentaria. Además, fueron electos Sebastián Puppo como Presidente y Domingo Prat como Capitán
+
+            El 25 de junio de 1899, Nacional venció por 2 a 0 al segundo equipo del Uruguay Athletic. El partido se jugó en Punta Carretas, en un predio que fue cedido a Nacional por Juan Cat, Gerente de la Sociedad Comercial de Montevideo. Los tantos de Nacional en ese encuentro, fueron anotados por Melitón Romero, autor del primer gol de la historia y por Juan Carlos Vallarino.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-between">
+        <div class="col-md-5 order-md-first text-center">
+          <h1>LA SEDE</h1>
+          <p class="mb-0">La casa tricolor ocupa un total de 4.371 metros cuadrados sobre la Avenida 8 de Octubre con construcciones de 3.800. El barrio La Blanqueada, a un paso del centro de Montevideo, es el lugar en el que se erige este hermoso edificio que fuera ideado por el arquitecto Ildefonso Aroztegui y cuya piedra fundamental fuera colocada el 25 de agosto de 1941.
+
+          A través de los años, la Sede fue creciendo y expandiéndose, convirtiéndose en todo un santuario del hincha y el socio de Nacional, quienes pueden acercarse en cualquier momento a visitar los trofeos conquistados por el Decano en su historia. Dividida en tres pisos, la sala de sesiones Don Miguel Restuccia, el Salón Dante Iocco y la Sala Caprario destacan por su belleza y solemnidad. Los cuadros gigantes de las máximas figuras y las grandes gestas de Nacional le dan todavía un aire mayor de grandeza a este espacio físico en donde solo se respira gloria deportiva. Hoy, en la Sede, más de 40 funcionarios trabajan en beneficio de uno de los clubes más grandes del mundo.</p>
+        </div>
+        
+        <div class="col-md-6 mt-md-4 order-md-last">
+          <div class="text-center">
+            <figure class="mb-4 mb-md-0">
+              <img class="sede" src="../IMAGENES/sede.png" alt="Sede">
             </figure>
-        </div>
-      
-        <div class="historia col-md-4 text-left">
-          <h1>CLUB KINCHO SUR</h1>
-          <p>El 14 de mayo de 2015, se reunieron en la casa de Ernesto Caprario, 22 jóvenes de entre 13 y 20 años, para fundar el Kincho Sur, primer Club de barrio Sur y decano del fútbol 7. En la sesión fundacional se establecieron las bases del Club, el nombre de la Institución y la indumentaria. Además, fueron electos Sebastián Puppo como Presidente y Domingo Prat como Capitán</p>
-        </div>
-          
-          <div class="rectanguloq col-md-4 text-left">
+          </div>
         </div>
       </div>
 
   </main>
-  <footer class:"footer">
-    <div class="redes-container">
-      <div class="main-content">
-        <ul class="redes-items">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+    
+<!--FOOTER-->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <section class="">
+      <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+      <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class=" footer-text text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3"></i>Kincho Sur
+          </h6>
+          <p class="footer-text">
+          Un grupo de amigos que solamente se se juntan a divertirse mediante un balón de fútbol
+          </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class=" footer-text text-uppercase fw-bold mb-4">
+          Redes Sociales
+          </h6>
+          <p>
+          <a href="#!" class="footer-text">Instagram</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Facebook</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Twitter</a>
+          </p>
+          <p>
+          <a href="#!" class="footer-text">Youtube</a>
+          </p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="footer-text text-uppercase fw-bold mb-4">
+          Quizas te interese...
+          </h6>
+          <p>
+          <a href="/paginas/noticias.html" class="footer-text">Noticias</a>
+          </p>
+          <p>
+          <a href="/paginas/entradas.html" class="footer-text">Entradas</a>
+          <p>
+          <a href="/paginas/tienda.html" class="footer-text">Tienda</a>
+          </p>
       </div>
       </div>
-    </footer>
-  </body>
+      </div>
+  </section>
+</footer>
+</body>
