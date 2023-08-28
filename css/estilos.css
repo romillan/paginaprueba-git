@@ -243,13 +243,13 @@ li {
 
 .container-intercalado:nth-child(even) .descripcion {
   color: #1d222e; 
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .container-intercalado:nth-child(odd) {
   background-color: #1d222e;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -353,4 +353,6 @@ article a:hover {
   height: auto;
   display: block;
 }
+
+
 
