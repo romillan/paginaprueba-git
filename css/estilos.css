@@ -167,12 +167,24 @@ body {
   margin-top: 20px;
 }
 
+.plantel {
+  width: 430px;
+  height: auto;
+  order: 1;
+  border: 3px solid #ffffff;
+  margin-top: 100px;
+}
+
 .sede {
   width: 430px;
   height: auto;
   order: 1;
   border: 3px solid #ffffff;
-  margin-top: 40px;
+  margin-top: 100px;
+}
+
+.plantel1 {
+  margin-top: 120px;
 }
 
 .noticias {
@@ -180,6 +192,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+
+.info{
+  margin-top: 100px;
+
 }
 
 .img-fluid {
